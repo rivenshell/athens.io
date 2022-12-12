@@ -3,12 +3,12 @@ import { writeFileSync } from 'fs';
 import { Buffer } from "buffer";
 
 const configuration = new Configuration({
-    apiKey: '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',
+    apiKey: 'enter-here',
 });
 
 const openai = new OpenAIApi(configuration);
 
-const prompt = 'a ship sailing through a river of fire in deep space'
+const prompt = 'a pirate ship sailing through a football field'
 
 const result = await openai.createImage({
     prompt,
