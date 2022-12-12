@@ -3,16 +3,16 @@ import { writeFileSync } from 'fs';
 import { Buffer } from "buffer";
 
 const configuration = new Configuration({
-    apiKey: 'insert-here',
+    apiKey: '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',
 });
 
 const openai = new OpenAIApi(configuration);
 
-const prompt = 'sad portrait of cyberpunk girl hyperrealism'
+const prompt = 'rocket ship going warp speed through space'
 
 const result = await openai.createImage({
     prompt,
-    n: 2,
+    n: 1,
     size: "1024x1024",
     user: 'wheredidwegowrong89'
 });
