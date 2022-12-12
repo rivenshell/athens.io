@@ -3,16 +3,16 @@ import { writeFileSync } from 'fs';
 import { Buffer } from "buffer";
 
 const configuration = new Configuration({
-    apiKey: 'enter-here',
+    apiKey: 'insert-here',
 });
 
 const openai = new OpenAIApi(configuration);
 
-const prompt = 'a pirate ship sailing through a football field'
+const prompt = 'sad portrait of cyberpunk girl hyperrealism'
 
 const result = await openai.createImage({
     prompt,
-    n: 1,
+    n: 2,
     size: "1024x1024",
     user: 'wheredidwegowrong89'
 });
