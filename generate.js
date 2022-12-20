@@ -3,12 +3,12 @@ import { writeFileSync } from 'fs';
 import { Buffer } from "buffer";
 
 const configuration = new Configuration({
-    apiKey: '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',
+    apiKey: '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',
 });
 
 const openai = new OpenAIApi(configuration);
 
-const prompt = 'rocket ship going warp speed through space'
+const prompt = 'type three civilization based on the Kardashev scale hyperrealistic'
 
 const result = await openai.createImage({
     prompt,
